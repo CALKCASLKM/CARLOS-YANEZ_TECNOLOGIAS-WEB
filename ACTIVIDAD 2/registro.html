@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="estilo principal.css">
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Pagina Principal.html">Sección Principal</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades Lógicas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Formulario de Registro</h1>
+    <form id="registroForm" target="_blank">
+        <label for="id">ID:</label>
+        <input type="text" id="id" required>
+        <br><br>
+        <label for="cedula">Cédula de Identidad:</label>
+        <input type="text" id="cedula" required>
+        <br><br>
+        <label for="nombres">Nombres y Apellidos:</label>
+        <input type="text" id="nombres" required>
+        <br><br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required>
+        <br><br>
+        <label for="ciudad">Ciudad de Procedencia:</label>
+        <select id="ciudad" required>
+            <option value="" disabled selected>Seleccione una ciudad</option>
+            <option value="Quito">Esmeraldas</option>
+            <option value="Guayaquil">Quito</option>
+            <option value="Cuenca">Otavalo</option>
+            <option value="Manta">Manta</option>
+            <option value="Ambato">Ibarra</option>
+        </select>
+        <br><br>
+        <button type="submit">Registrar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
